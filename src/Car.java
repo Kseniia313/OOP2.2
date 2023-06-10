@@ -1,27 +1,22 @@
-public class Car implements TireChanger{
+public class Car extends Vehicles implements CheckVehicles {
 
-    private String modelName;
-    private int wheelsCount;
 
     public Car(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
+        super(modelName, wheelsCount);
     }
 
-    public String getModelName() {
-        return modelName;
+    @Override
+    public void check() {
+        super.check();
     }
 
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
+    @Override
+    public void checkEngine() {
+        super.checkEngine();
     }
 
-    public int getWheelsCount() {
-        return wheelsCount;
+    @Override
+    public void updateTyre() {
+        super.updateTyre();
     }
-
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
-    }
-
 }
