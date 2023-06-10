@@ -1,5 +1,5 @@
 
-public class ServiceStation implements CheckVehicles{
+public class ServiceStation implements CheckVehicles {
     public void check(Car car) {
         if (car != null) {
             System.out.println("Обслуживаем " + car.getModelName());
@@ -20,6 +20,7 @@ public class ServiceStation implements CheckVehicles{
         }
         truck.checkTrailer();
     }
+
     public void check(Bicycle bicycle) {
         if (bicycle != null) {
             System.out.println("Обслуживаем " + bicycle.getModelName());
@@ -30,5 +31,6 @@ public class ServiceStation implements CheckVehicles{
         }
 
     }
+}
 
 
